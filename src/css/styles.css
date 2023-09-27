@@ -1,0 +1,205 @@
+:root {
+    --fuenteTitulos: 'Grandstander', cursive;
+    --fuenteParrafos: 'Shantell Sans', cursive;
+
+    /* font-family: 'Shantell Sans', cursive; */
+    /* font-family: 'Grandstander', cursive; */
+
+    --primario: #784D3C;
+    --gris: #e1e1e1;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    /* font-family: var(--fuenteParrafos); */
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/** Globales **/
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4 {
+    font-family: var(--fuenteTitulos);
+    line-height: 1.2;
+    margin: 0;
+}
+p {
+    font-family: var(--fuenteTitulos);
+    margin: 0;
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%;
+}
+/** Utilidades **/
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.centrar-texto {
+    text-align: center;
+}
+.display-flex {
+    display: flex;
+}
+.justify-spaceBetween {
+    justify-content: space-between;
+}
+.justify-spaceEvenly {
+    justify-content: space-evenly;
+}
+.align-center {
+    align-items: center;
+}
+
+body {
+    margin: 0;
+}
+.body {
+    background: url(/src/img/tumblr_ohtkclD3aC1s3zokdo1_1280.jpg), rgba(0, 0, 0, 0.8);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    position: relative;
+
+    background-color: rgb(255, 222, 228);
+    background-image: url('/src/img/96ca7b50c732cc1272598b4008c23411.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: 0.4rem solid white;
+    border-radius: 6px;
+
+    width: 95vw;
+    height: calc(95vw * 1.33333);
+    max-width: 1080px; 
+    max-height: 1440px;
+}
+    @media (min-width: 480px) { 
+        .card {
+            width: 85vw;
+            height: calc(85vw * 1.33333);
+        }
+    } 
+    @media (min-width: 610px) { 
+        .card {
+            height: 90vh;
+            width: calc(90vh * 0.75);
+        }
+    } 
+
+.contenido {
+    background-color: #e5e4e2;
+    background: url(/src/img/Abstract_white_background_15.jpg), rgba(0, 0, 0, 0.1);
+    background-blend-mode: darken;
+    background-size: contain;
+    border-radius: 2px;
+
+    position: absolute;
+    top: 33.3%;
+    left: 33.8%;
+    padding: 1.2rem;
+    
+    max-width: 47.3%;
+    min-height: 51%;
+}
+@media (max-height: 640px) { 
+    .contenido {
+        min-height: 0;
+        max-width: none;
+    }
+} 
+@media (min-width: 610px) { 
+    .contenido {
+        min-height: 51%;
+    }
+} 
+.imgMain {
+    margin: auto;
+    justify-content: center;
+}
+.imgMain img{
+    max-width: 100%;
+}
+#title {
+    text-transform: capitalize;
+    font-family: var(--fuenteTitulos);
+    color: #231a1c;
+}
+#author {
+    text-transform: capitalize;
+    font-family: var(--fuenteParrafos);
+    font-size: 1.3rem;
+    color: #231a1c;
+}
+.duration {
+    border-top: 0.25rem solid #311922;
+    border-radius: 0.3rem;
+    position: relative;
+}
+.duration::before {
+    content: ''; 
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #160a0e;
+    border-radius: 50%;
+    position: absolute;
+    top: -0.5rem;
+    left: 8rem;
+    z-index: 1;
+  }
+
+.container {
+    overflow: hidden; /* Hide overflow content */
+}
+.auto-scroll-paragraph {
+    /* white-space: nowrap; Prevent text from wrapping to the next line */
+    overflow: hidden; /* Hide overflowing text */
+    position: relative; /* Set a relative position to allow absolute positioning */
+
+    /* | name (JS) | duration (JS) | timing-function(JS) | delay (JS) | interation-count (JS) | */
+    /* animation: scrollText 10s linear 5s infinite;  */
+}
+@keyframes scrollText {
+    0% {
+      left: 0.1%; /* Start off-screen to the right */
+    }
+    100% {
+      left: -100%; /* End off-screen to the left */
+    }
+}
+  
+
