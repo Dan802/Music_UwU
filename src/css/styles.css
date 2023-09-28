@@ -78,7 +78,7 @@ body {
     margin: 0;
 }
 .body {
-    background: url(/src/img/tumblr_ohtkclD3aC1s3zokdo1_1280.jpg), rgba(0, 0, 0, 0.8);
+    background: url(/src/img/tumblr_ohtkclD3aC1s3zokdo1_1280.webp), rgba(0, 0, 0, 0.8);
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
@@ -95,7 +95,7 @@ body {
     position: relative;
 
     background-color: rgb(255, 222, 228);
-    background-image: url('/src/img/96ca7b50c732cc1272598b4008c23411.jpg');
+    background-image: url('/src/img/96ca7b50c732cc1272598b4008c23411.webp');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -123,7 +123,7 @@ body {
 
 .contenido {
     background-color: #e5e4e2;
-    background: url(/src/img/Abstract_white_background_15.jpg), rgba(0, 0, 0, 0.1);
+    background: url(/src/img/Abstract_white_background_15.webp), rgba(0, 0, 0, 0.1);
     background-blend-mode: darken;
     background-size: contain;
     border-radius: 2px;
