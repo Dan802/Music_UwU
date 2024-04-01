@@ -19,8 +19,6 @@ function iniciarapp() {
 
 function fillHTML(arrayposition) {
 
-    console.log('arraypositon = ', arrayposition);
-    
     addImg(img[arrayposition]);
     addTitleSong(title[arrayposition]);
     addAuthorSong(author[arrayposition]);
@@ -127,9 +125,9 @@ function addReproductionMenu() {
 function addReproductionIcons() {
 
     const svgShufle = `<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrows-shuffle-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#311922" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M18 4l3 3l-3 3"></path><path d="M18 20l3 -3l-3 -3"></path><path d="M3 7h3a5 5 0 0 1 5 5a5 5 0 0 0 5 5h5"></path><path d="M3 17h3a5 5 0 0 0 5 -5a5 5 0 0 1 5 -5h5"></path></svg>`;
-    const svgbefore = `<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-skip-back-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="none" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M19.496 4.136l-12 7a1 1 0 0 0 0 1.728l12 7a1 1 0 0 0 1.504 -.864v-14a1 1 0 0 0 -1.504 -.864z" stroke-width="0" fill="#311922"></path><path d="M4 4a1 1 0 0 1 .993 .883l.007 .117v14a1 1 0 0 1 -1.993 .117l-.007 -.117v-14a1 1 0 0 1 1 -1z" stroke-width="0" fill="#311922"></path></svg>`;
-    const svgplay = `<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-play-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="none" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z" stroke-width="0" fill="#311922"></path></svg>`;
-    const svgnext = `<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-skip-forward-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3 5v14a1 1 0 0 0 1.504 .864l12 -7a1 1 0 0 0 0 -1.728l-12 -7a1 1 0 0 0 -1.504 .864z" stroke-width="0" fill="#311922"></path><path d="M20 4a1 1 0 0 1 .993 .883l.007 .117v14a1 1 0 0 1 -1.993 .117l-.007 -.117v-14a1 1 0 0 1 1 -1z" stroke-width="0" fill="#311922"></path></svg>`;
+    const svgbefore = `<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-skip-back-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="none" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M19.496 4.136l-12 7a1 1 0 0 0 0 1.728l12 7a1 1 0 0 0 1.504 -.864v-14a1 1 0 0 0 -1.504 -.864z" stroke-width="0" fill="#e0cfce"></path><path d="M4 4a1 1 0 0 1 .993 .883l.007 .117v14a1 1 0 0 1 -1.993 .117l-.007 -.117v-14a1 1 0 0 1 1 -1z" stroke-width="0" fill="#e0cfce"></path></svg>`;
+    const svgplay = `<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-play-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="none" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z" stroke-width="0" fill="#e0cfce"></path></svg>`;
+    const svgnext = `<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-skip-forward-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3 5v14a1 1 0 0 0 1.504 .864l12 -7a1 1 0 0 0 0 -1.728l-12 -7a1 1 0 0 0 -1.504 .864z" stroke-width="0" fill="#e0cfce"></path><path d="M20 4a1 1 0 0 1 .993 .883l.007 .117v14a1 1 0 0 1 -1.993 .117l-.007 -.117v-14a1 1 0 0 1 1 -1z" stroke-width="0" fill="#e0cfce"></path></svg>`;
     const svgloop = `<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-repeat" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#311922" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 12v-3a3 3 0 0 1 3 -3h13m-3 -3l3 3l-3 3"></path><path d="M20 12v3a3 3 0 0 1 -3 3h-13m3 3l-3 -3l3 -3"></path></svg>`;
 
     const divReproductionIcons = document.createElement('DIV');
@@ -150,6 +148,7 @@ function addReproductionIcons() {
     const buttonPlayPause = document.createElement('BUTTON');
     buttonPlayPause.id = 'btnPlay';
     buttonPlayPause.innerHTML = svgplay;
+    buttonPlayPause.classList.add('loop');
     divReproductionIcons.appendChild(buttonPlayPause);
     
     // Cuarto Icono
@@ -163,18 +162,36 @@ function addReproductionIcons() {
 
     // Eventos
     document.getElementById('btnBefore').onclick =  function() {beforeCard()};
-    document.getElementById('btnPlay').addEventListener('click', playsong());
+    document.getElementById('btnPlay').addEventListener('click', playsong);
     document.getElementById('btnAfter').onclick =  function() {nextCard()};
 }
 
+let i = 0
+
 function playsong() {
-    
-    const audio = document.getElementById('myAudio');
-    const playButton = document.getElementById('btnPlay');
-    
-    playButton.addEventListener('click', function() {
+
+    document.getElementById('btnPlay').classList.remove('loop')
+
+    if(i == 0) {
+
+        const svgstop = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="24" height="24" stroke-width="2"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path width="24" height="24" d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" fill="#e0cfce"/></svg>`
+        document.querySelector('#btnPlay').childNodes[0].remove()
+        document.querySelector('#btnPlay').innerHTML = svgstop
+        
+        const audio = document.getElementById('myAudio');
         audio.play();
-    });
+
+        i = 1
+    } else {
+        const svgplay = `<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-play-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="none" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z" stroke-width="0" fill="#e0cfce"></path></svg>`;
+        document.querySelector('#btnPlay').childNodes[0].remove()
+        document.querySelector('#btnPlay').innerHTML = svgplay
+
+        const audio = document.getElementById('myAudio');
+        audio.pause();
+
+        i=0
+    }
 }
 
 function nextCard() {
@@ -200,7 +217,6 @@ function beforeCard() {
         randomNumber -= 1;
     }
 
-    console.log('arraypositon = ', randomNumber);
     changeImg(img[randomNumber]);
     changeTitleSong(title[randomNumber]);
     changeAuthorSong(author[randomNumber]);

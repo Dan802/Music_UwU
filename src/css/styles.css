@@ -180,7 +180,35 @@ body {
     top: -0.5rem;
     left: 8rem;
     z-index: 1;
-  }
+}
+#reproductionIcons button {     
+    background-color: #6b4346;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#btnPlay.loop {
+    animation: agrandar 2s infinite;
+}
+@keyframes agrandar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+#reproductionIcons button svg {
+    width: 70%;
+    color: white;
+    fill: white;
+}
 
 .container {
     overflow: hidden; /* Hide overflow content */
